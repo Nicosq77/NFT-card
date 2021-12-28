@@ -1,71 +1,149 @@
-# Frontend Mentor - NFT preview card component solution
+body{
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+main {
+  margin-left: 30px;
+}
 
-## Table of contents
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: normal;
+  font-size: 20px;
+}
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+h1:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
 
+h2{
+  color: hsl(215, 51%, 70%);
+  font-size: 16px
+}
 
-## Overview
+h3{
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
 
-### The challenge
+p{
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: lighter;
+}
 
-Users should be able to:
+hr{
+  border-top:0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.1px solid;
+  width: 80%;
+  color: hsl(215, 32%, 27%);
+}
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-
-### Links
-
-- Live Site URL: [nft-preview-card](https://nicosq77.github.io/nft-preview-card/)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS Grid
-
-### What I learned
-
-
-```html
-<span>Some HTML code I'm proud of</span>
-
-<div class="img-containter">
-  <img class="img-equilibrium">
-  <div class="overlay">
-    <img class="view">
-  </div>
-
-</div>
-```
-```css
-span{
+footer{
   display: flex;
+}
+
+.container{
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  margin: 150px auto;
+  box-shadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.view-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.equilibrium{
+  width: 300px;
+  border-radius: 10px;
+  margin: 25px 25px;
+  cursor: pointer;
 }
 
 .overlay{
   position: absolute;
-  opacity:0;
+  top:150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 25px 25px;
   background-color: hsl(178, 100%, 50%);
+  opacity: 0;
 }
 
-.img-equilibrium:hover .overlay{
-  opacity:0.5;
+.img-container:hover .overlay{
+  opacity: 0.5;
 }
 
-```
+.view-icon{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top:120px;
+  left: 120px;
+
+}
+
+.detail-container{
+  display: flex;
+}
+.price{
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.deadline{
+  font-weight: lighter;
+}
+.icon-ethereum {
+  width: 11.5px;
+  height: 18px;
+  margin-top: 14.28px;
+}
+.icon-clock{
+  position: relative;
+  margin-top: 14.28px;
+  margin-left: 80px;
+  width: 18px;
+  height: 18px;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.avatar{
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.author:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.author{
+  color: white;
+}
+.creation{
+  font-weight: 300;
+  margin-left: 25px;
+}
+
+.attribution{
+  color: white;
+}
+

@@ -97,10 +97,6 @@ footer{
   display: flex;
 }
 
-.detail{
-  margin-left: 20px;
-  width: 80%;
-}
 .price{
   color: hsl(178, 100%, 50%);
   font-weight: 600;
